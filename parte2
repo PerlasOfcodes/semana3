@@ -1,0 +1,135 @@
+//1
+string numeroLetra;
+
+Console.WriteLine("Introduce un número del 1 al 5 en letra:");
+numeroLetra = Console.ReadLine().ToLower();
+
+switch (numeroLetra)
+{
+    case "uno":
+        Console.WriteLine("El número en dígito es: 1");
+        break;
+    case "dos":
+        Console.WriteLine("El número en dígito es: 2");
+        break;
+    case "tres":
+        Console.WriteLine("El número en dígito es: 3");
+        break;
+    case "cuatro":
+        Console.WriteLine("El número en dígito es: 4");
+        break;
+    case "cinco":
+        Console.WriteLine("El número en dígito es: 5");
+        break;
+    default:
+        Console.WriteLine("El número introducido no es válido.");
+        break;
+}
+
+
+//2
+int numeroDia;
+
+Console.WriteLine("Introduce un número del 1 al 7:");
+numeroDia = int.Parse(Console.ReadLine());
+
+switch (numeroDia)
+{
+    case 1:
+        Console.WriteLine("El día de la semana es: Lunes");
+        break;
+    case 2:
+        Console.WriteLine("El día de la semana es: Martes");
+        break;
+    case 3:
+        Console.WriteLine("El día de la semana es: Miércoles");
+        break;
+    case 4:
+        Console.WriteLine("El día de la semana es: Jueves");
+        break;
+    case 5:
+        Console.WriteLine("El día de la semana es: Viernes");
+        break;
+    case 6:
+        Console.WriteLine("El día de la semana es: Sábado");
+        break;
+    case 7:
+        Console.WriteLine("El día de la semana es: Domingo");
+        break;
+    default:
+        Console.WriteLine("El número introducido no es válido.");
+        break;
+}
+
+
+//3
+string tipoServicio;
+
+Console.WriteLine("Introduce el tipo de servicio (lavado de auto, cambio de aceite, revisión mecánica):");
+tipoServicio = Console.ReadLine().ToLower();
+
+switch (tipoServicio)
+{
+    case "lavado de auto":
+        Console.WriteLine("El importe a pagar es: Q50.00");
+        break;
+    case "cambio de aceite":
+        Console.WriteLine("El importe a pagar es: Q100.00");
+        break;
+    case "revisión mecánica":
+        Console.WriteLine("El importe a pagar es: Q150.00");
+        break;
+    default:
+        Console.WriteLine("El tipo de servicio introducido no es válido.");
+        break;
+}
+
+
+//4
+string idioma;
+
+Console.WriteLine("Introduce el idioma de tu preferencia (español, inglés, francés):");
+idioma = Console.ReadLine().ToLower();
+
+switch (idioma)
+{
+    case "español":
+        Console.WriteLine("¡Bienvenido!");
+        break;
+    case "inglés":
+        Console.WriteLine("Welcome!");
+        break;
+    case "francés":
+        Console.WriteLine("Bienvenue!");
+        break;
+    default:
+        Console.WriteLine("El idioma introducido no es válido.");
+        break;
+}
+
+
+//5
+// Solicitar al usuario la calificación del examen
+Console.WriteLine("Introduce la calificación del examen:");
+int calificacion = int.Parse(Console.ReadLine());
+
+// Evaluar la calificación con la sentencia switch
+switch (calificacion)
+{
+    case 90 to 100:
+        Console.WriteLine("¡Felicidades! Obtuviste una calificación **Sobresaliente**.");
+        break;
+    case 80 to 89:
+        Console.WriteLine("¡Buen trabajo! Obtuviste una calificación **Notable**.");
+        break;
+    case 70 to 79:
+        Console.WriteLine("Has **aprobado** el examen con una calificación **Aprobatoria**.");
+        break;
+    case 60 to 69:
+        Console.WriteLine("Lo sentimos, no has aprobado el examen. Tu calificación es **No aprobatoria**.");
+        break;
+    default:
+        Console.WriteLine("La calificación introducida no es válida. Debe estar entre 0 y 100.");
+        break;
+}
+
