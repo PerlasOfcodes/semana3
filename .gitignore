@@ -1,0 +1,155 @@
+//1
+try
+{
+    // Introduce un código que podría generar un error
+}
+catch (Exception ex)
+{
+    // Maneja el error mostrando un mensaje al usuario
+    Console.WriteLine("Ha ocurrido un error: " + ex.Message);
+}
+
+//2
+
+int num1, num2, num3, mayor;
+
+Console.WriteLine("Introduce el primer número:");
+num1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Introduce el segundo número:");
+num2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Introduce el tercer número:");
+num3 = int.Parse(Console.ReadLine());
+
+mayor = num1;
+
+if (num2 > mayor)
+{
+    mayor = num2;
+}
+
+if (num3 > mayor)
+{
+    mayor = num3;
+}
+
+Console.WriteLine("El mayor de los tres números es: " + mayor);
+
+
+//3
+int edad;
+
+Console.WriteLine("Introduce tu edad:");
+edad = int.Parse(Console.ReadLine());
+
+if (edad >= 18)
+{
+    Console.WriteLine("¡Bienvenido al club!");
+}
+else
+{
+    Console.WriteLine("Lo sentimos, no puedes ingresar al club. Debes ser mayor de edad.");
+}
+
+
+//4
+double precioOriginal, precioFinal;
+
+Console.WriteLine("Introduce el precio original del producto:");
+precioOriginal = double.Parse(Console.ReadLine());
+
+if (precioOriginal > 100)
+{
+    precioFinal = precioOriginal - (precioOriginal * 0.1);
+    Console.WriteLine("El precio final con descuento es: Q{0:F2}", precioFinal);
+}
+else
+{
+    Console.WriteLine("El precio final es: Q{0:F2}", precioOriginal);
+}
+
+
+
+//5
+string usuario, contrasena;
+
+Console.WriteLine("Introduce tu nombre de usuario:");
+usuario = Console.ReadLine();
+
+Console.WriteLine("Introduce tu contraseña:");
+contrasena = Console.ReadLine();
+
+if (usuario == "usuario" && contrasena == "contraseña")
+{
+    Console.WriteLine("Acceso concedido.");
+}
+else
+{
+    Console.WriteLine("Acceso denegado. Las credenciales no son válidas.");
+}
+
+
+
+//6
+int numero;
+
+Console.WriteLine("Introduce un número:");
+numero = int.Parse(Console.ReadLine());
+
+if (numero % 2 == 0)
+{
+    Console.WriteLine("El número es par.");
+}
+else
+{
+    Console.WriteLine("El número es impar.");
+}
+
+
+
+//7
+double montoPrestamo;
+int edad;
+
+Console.WriteLine("Introduce el monto del préstamo:");
+montoPrestamo = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Introduce tu edad:");
+edad = int.Parse(Console.ReadLine());
+
+if (montoPrestamo < 5000 || edad > 60)
+{
+    Console.WriteLine("¡Felicidades! Su préstamo ha sido aprobado.");
+}
+else
+{
+    Console.WriteLine("Lo sentimos, su solicitud de préstamo ha sido rechazada.");
+}
+
+
+
+//8
+string figura;
+double lado, radio, baseTriangulo, alturaTriangulo;
+
+Console.WriteLine("Introduce el tipo de figura geométrica (triángulo, cuadrado o círculo):");
+figura = Console.ReadLine();
+
+switch (figura)
+{
+    case "triángulo":
+        Console.WriteLine("Introduce la base del triángulo:");
+        baseTriangulo = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce la altura del triángulo:");
+        alturaTriangulo = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("El área del triángulo es: {0:F2}", (baseTriangulo * alturaTriangulo) / 2);
+        break;
+
+    case "cuadrado":
+        Console.WriteLine("Introduce el lado del cuadrado:");
+        lado = double.Parse(Console.ReadLine());
+
+        Console.WriteLine
